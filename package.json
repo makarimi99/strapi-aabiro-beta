@@ -1,0 +1,31 @@
+{
+  "name": "my-project",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "translate": "copy .\\src\\admin\\extensions\\translations\\. .\\node_modules\\@strapi\\admin\\admin\\src\\translations",
+    "dev": "npm run translate && npm run strapi develop",
+    "start": "strapi start",
+    "build": "npm run translate && npm run strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.3.9",
+    "@strapi/plugin-users-permissions": "4.3.9",
+    "@strapi/plugin-i18n": "4.3.9",
+    "better-sqlite3": "7.4.6"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "c492644c-475f-4193-a853-cb1371aafe7c"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
